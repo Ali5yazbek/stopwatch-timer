@@ -1,0 +1,89 @@
+body{
+    background: linear-gradient(28deg,#5bf63c,#ffffff 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: sans-serif;
+}
+
+
+.container{
+    background-color: #eee9ee;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 0 12px rgba(0,0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+    font-size: 30px;
+    margin-bottom: 1.5rem;
+
+}
+
+.stopwatch{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.timer{
+    font-size: 40px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    animation: pulse 1.5s infinite alternate;
+}
+@keyframes pulse{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.05);
+    }
+}
+
+.timer span{
+    width: 10vh;
+    display: inline-block;
+    text-align: center;
+}
+
+.contorls{
+display: flex;
+gap: 1rem;
+}
+
+button{
+    padding: 075rem,1.5rem;
+    font-size: 1rem;
+    background-color: #89f782;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transform: background-color 0.3s ease-in-out;
+}
+button:hover{
+    background-color: #5bf63c;
+}
+
+.lap-title{
+    font-size: 1.5rem;
+}
+.laps{
+    width: 100%;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: auto;
+    max-height: 200px;
+    background-color: #ffffff;
+}
